@@ -5,8 +5,6 @@ from sqlalchemy import create_engine
 from json import dumps
 from sqlalchemy import text
 
-
-
 db_connect = create_engine('sqlite:///PetData.db')
 app = Flask(__name__)
 api = Api(app)
@@ -44,7 +42,7 @@ class Pets(Resource):
             conn.commit()
            
 
-            # Obtem o último pet inserido
+            # Consulta para obter o último pet inserido
 
             consulta_query = text("""
                                     SELECT * FROM Pets ORDER BY Id DESC LIMIT 1
@@ -119,7 +117,6 @@ class Pets(Resource):
             return {'message': str(e)}, 500
         finally:
             conn.close()   
-
 class PetsById(Resource):
     def delete(self, Id):
         conn = db_connect.connect()
@@ -162,8 +159,8 @@ class PetsById(Resource):
         finally:
             conn.close()
             
-api.add_resource(Pets, '/pets')    
-api.add_resource(PetsById, '/pets/<int:id>')                 
+api.add_resource(Pets,'/pets')
+api.add_resource(PetsById,'/pets/<int:Id>')          
 
 if __name__ == '__main__':
     app.run(debug=True)
