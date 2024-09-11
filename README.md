@@ -117,7 +117,7 @@ Vou utilizar o SQLite como banco de dados.O Script para Gerar as Tabelas se enco
 [ScriptBD](database)
 Outra coisa importante a se destacar é que  arquivo de banco de dados é PetData.db deverá ficar na raiz do projeto.
 
-**Endpoints**
+## Endpoints
 
 
 | Verbo  | Endpoint        | Parâmetro | Body          |
@@ -128,6 +128,7 @@ Outra coisa importante a se destacar é que  arquivo de banco de dados é PetDat
 | GET    | /pets           | N/A       | N/A           |
 | PUT    | /pets           | N/A       | Schema Pet    |           
 <br>
+
 - Esse é o Schema Pet, utilizado para passar para os métodos que exigirem Body.
  
 <br>
