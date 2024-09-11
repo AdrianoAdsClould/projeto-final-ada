@@ -131,6 +131,7 @@ Outra coisa importante a se destacar é que  arquivo de banco de dados é PetDat
 - Esse é o Schema Pet, utilizado para passar para os métodos que exigirem Body.
  
 <br>
+
 ```json
 {  
     "Nome": "Arara",
@@ -150,7 +151,7 @@ Projeto sob a licença do MIT. Se quiser saber leia  [LICENCE](https://github.co
 
 
 # Contribuição
-Siga as diretivas do CONTRIBUTING.md nele estão instruções de contribuir para este projeto.
+Siga as diretivas do [CONTRIBUTING](https://github.com/AdrianoAdsClould/projeto-final-ada/blob/main/docs/CONTRIBUTING.md) nele estão instruções de contribuir para este projeto.
 
 
 
