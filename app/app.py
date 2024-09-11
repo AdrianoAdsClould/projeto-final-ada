@@ -43,7 +43,6 @@ class Pets(Resource):
 
             # Consulta para obter o último pet inserido
 
-
             consulta_query = text("""
                                     select * from Pets order by Id desc limit 1
                                   """)
@@ -162,5 +161,6 @@ class PetsById(Resource):
             
 api.add_resource(Pets,'/pets')
 api.add_resource(PetsById,'/pets/<int:Id>')          
+
 if __name__ == '__main__':
     app.run(debug=True)
