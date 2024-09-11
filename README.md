@@ -14,8 +14,9 @@
 
 ### 🛠 Tecnologias<a id="tecnologias"></a>
  As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
-- Git
-- [Vs Code](https://code.visualstudio.com/)<br>
+- [Git](https://git-scm.com/) 
+- [Vs Code](https://code.visualstudio.com/)
+  <br>
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 <br>
 - [Jsonify](https://jsonify.com/)
