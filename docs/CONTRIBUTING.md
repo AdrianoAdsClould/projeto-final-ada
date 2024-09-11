@@ -1,4 +1,4 @@
-# Para Contribuir com este Projeto Contribuição
+# Contribuição para este Projeto.
 
 * Passos a serem seguidos:
 <br>
