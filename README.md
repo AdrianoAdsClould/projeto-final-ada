@@ -31,11 +31,11 @@
  ###  Pré-requisitos<a id="pre-requisitos"></a>
 
 Antes de começar, será preciso ter instalado em sua máquina as seguintes ferramentas:<br>
- [Git](https://git-scm.com/)
+ - [Git](https://git-scm.com/)
  <br>
- [Python3](https://www.python.org/downloads/)
+ - [Python3](https://www.python.org/downloads/)
  <br>
- [Postman](https://www.postman.com/downloads/)
+ - [Postman](https://www.postman.com/downloads/)
  <br>
   Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
@@ -49,6 +49,7 @@ Supondo que o Python já esteje instalado.Siga os passos abaixo descrito:
 > [!NOTE] Outra coisa importante deixe para instalar ele dentro do env flask!
 <br>
 Caso não tenha o pip instalado:
+
 ```terminal
  sudo apt install python3-pip
  ```
