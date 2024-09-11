@@ -8,19 +8,18 @@ from sqlalchemy import text
 db_connect = create_engine('sqlite:///PetData.db')
 app = Flask(__name__)
 api = Api(app)
-
 class Pets(Resource):
-   
     def post(self):
         try:
             conn = db_connect.connect()
+
             # Extração e validação dos dados do JSON
             data = request.get_json()
             Nome = data.get("Nome")
             Especie = data.get('Especie')
             Idade = data.get('Idade')
             Peso = data.get('Peso')
-            Data = data.get('Data') 
+            Data = data.get('Data')  # Certifique-se de que a chave 'Data' está no JSON
             Historico = data.get('Historico')
 
             if not all([Nome,Especie, Idade, Peso, Data, Historico]):
@@ -44,8 +43,9 @@ class Pets(Resource):
 
             # Consulta para obter o último pet inserido
 
+
             consulta_query = text("""
-                                    SELECT * FROM Pets ORDER BY Id DESC LIMIT 1
+                                    select * from Pets order by Id desc limit 1
                                   """)
             query = conn.execute(consulta_query )
             result = [dict(zip(tuple(query.keys()), i)) for i in query.cursor]
@@ -55,6 +55,7 @@ class Pets(Resource):
            conn.rollback()
         finally:
            conn.close()
+
 
     def get(self):
         try:
@@ -161,6 +162,5 @@ class PetsById(Resource):
             
 api.add_resource(Pets,'/pets')
 api.add_resource(PetsById,'/pets/<int:Id>')          
-
 if __name__ == '__main__':
     app.run(debug=True)
