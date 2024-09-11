@@ -14,17 +14,18 @@
 
 ### 🛠 Tecnologias<a id="tecnologias"></a>
  As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
-- [Git](https://git-scm.com/) 
+- [Git](https://git-scm.com/)
+ <br>
 - [Vs Code](https://code.visualstudio.com/)
-  <br>
+<br>
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 <br>
 - [Jsonify](https://jsonify.com/)
- <br>
+<br>
 - [Flask-restful](https://flask-restful.readthedocs.io/en/latest/)
- <br>
+<br>
 - [SQLite](https://www.sqlite.org/)
- <br>
+<br>
 - [SQLAlchemy](https://www.sqlalchemy.org/)
  <br>
 
